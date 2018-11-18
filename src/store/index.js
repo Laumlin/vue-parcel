@@ -1,11 +1,11 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
-import modules from './module/index.js'
+import demo from './module/demo.js'
 
 Vue.use(Vuex)
-
-const store = new Vuex.Store({
-  modules,
-  mutations: {}
-})
-export default store
+const modules = {
+	demo
+}
+export default new Vuex.Store({
+	modules
+})	
