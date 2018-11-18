@@ -1,7 +1,8 @@
 import axios from 'axios'
 import Vue from 'vue'
+import configs from './configs'
 
-axios.defaults.baseURL = process.env.API_HOST
+axios.defaults.baseURL = configs.BASE_URL
 axios.defaults.headers.post['Content-Type'] = 'application/json;charset=UTF-8'
 
 axios.interceptors.response.use((response) => {
