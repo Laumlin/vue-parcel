@@ -1,3 +1,3 @@
-const BASE_URL = 'sss'
+const BASE_URL = ''
 
 module.exports = {BASE_URL}
